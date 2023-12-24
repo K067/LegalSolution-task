@@ -1,0 +1,32 @@
+@import url(./normalize.css);
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {}
+
+li {
+    list-style-type: none;
+}
+
+li {
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: 185px;
+    margin-right: 185px;
+}
+
+.header-nav {
+    min-height: 110px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.header-nav-list {}
