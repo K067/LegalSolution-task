@@ -30,6 +30,11 @@ h1 {
     margin: 0;
 }
 
+h3 {
+    margin-top: 29px;
+    margin-bottom: 15px;
+}
+
 ul {
     padding: 0;
     margin: 0;
@@ -46,10 +51,15 @@ a {
     align-items: center;
 }
 
+span,
+p {
+    color: #787878;
+
+}
+
 p {
     word-break: break-all;
     white-space: normal;
-    color: #787878;
     margin: 0;
     font-weight: 400;
 }
@@ -119,6 +129,8 @@ section {
 
 .title {
     line-height: 130%;
+    font-weight: 300;
+    font-size: 36px;
 }
 
 .banner-title {
@@ -158,15 +170,10 @@ section {
     line-height: 155%;
 }
 
-.section-service-wrapper {
+.wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.section-service-title {
-    font-weight: 300;
-    font-size: 36px;
 }
 
 .section-service-sub {
@@ -197,4 +204,45 @@ section {
     line-height: 150%;
     text-align: center;
     width: 180px;
+}
+
+.section-article-list {
+    margin-top: 42px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.section-article-item {
+    width: 561px;
+    height: 180px;
+    display: flex;
+    gap: 30px;
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
+}
+
+.card-content {
+    margin-top: 23px;
+    margin-bottom: 38px;
+    width: 210px;
+}
+
+.card-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.date {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.sub-service {
+    text-align: center;
+}
+
+.sub-advice {
+    text-align: left;
 }
