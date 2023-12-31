@@ -222,7 +222,7 @@ section {
     border: 1px solid #E4E4E4;
 }
 
-.card-content {
+.card-content-advice {
     margin-top: 23px;
     margin-bottom: 38px;
     width: 210px;
@@ -245,4 +245,40 @@ section {
 
 .sub-advice {
     text-align: left;
+    width: 190px;
+}
+
+.section-client-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 42px;
+}
+
+.section-client-item {
+    width: 370px;
+    padding-top: 51px;
+    padding-left: 36px;
+    padding-right: 53px;
+    padding-bottom: 42px;
+    border-radius: 5px;
+    border: 1px solid #6b6b6b31;
+}
+
+.break {
+    opacity: 0.6;
+    background: #DADADA;
+    width: 297px;
+    height: 1px;
+    margin-bottom: 28px;
+    margin-top: 33px;
+}
+
+.card-content-client {
+    display: flex;
+    gap: 10px;
+}
+
+.card-content-info {
+    display: flex;
+    flex-direction: column;
 }
