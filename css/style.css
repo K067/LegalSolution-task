@@ -298,9 +298,13 @@ section {
 }
 
 .sub-client {
+    width: 280px;
+}
+
+.sub-client,
+.sub-contact {
     color: #787878;
     text-align: left;
-    width: 280px;
     line-height: 180%;
     /* ! */
     word-break: break-word;
