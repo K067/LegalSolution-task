@@ -51,6 +51,10 @@ a {
     align-items: center;
 }
 
+span {
+    font-weight: 400;
+}
+
 span,
 p {
     color: #787878;
@@ -67,6 +71,14 @@ p {
 h3 {
     font-size: 20px;
     font-weight: 600;
+}
+
+h4 {
+    color: #1C1C1C;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 180%;
+    margin: 0;
 }
 
 button {
@@ -201,9 +213,9 @@ section {
 
 .card-sub {
     font-size: 14px;
+    font-weight: 400;
     line-height: 150%;
     text-align: center;
-    width: 180px;
 }
 
 .section-article-list {
@@ -235,17 +247,19 @@ section {
 
 .date {
     font-size: 10px;
-    font-weight: 400;
     line-height: 150%;
 }
 
 .sub-service {
     text-align: center;
+    width: 215px;
+    word-break: break-all;
 }
 
 .sub-advice {
     text-align: left;
     width: 190px;
+
 }
 
 .section-client-list {
@@ -259,7 +273,7 @@ section {
     padding-top: 51px;
     padding-left: 36px;
     padding-right: 53px;
-    padding-bottom: 42px;
+    padding-bottom: 32px;
     border-radius: 5px;
     border: 1px solid #6b6b6b31;
 }
@@ -281,4 +295,26 @@ section {
 .card-content-info {
     display: flex;
     flex-direction: column;
+}
+
+.sub-client {
+    color: #787878;
+    text-align: left;
+    width: 280px;
+    line-height: 180%;
+    /* ! */
+    word-break: break-word;
+    word-spacing: -1.6px;
+    white-space: normal;
+}
+
+.card-content-info {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-size: 14px;
+    line-height: 180%;
+    /* 25.2px */
 }
