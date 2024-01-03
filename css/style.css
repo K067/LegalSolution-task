@@ -322,3 +322,18 @@ section {
     line-height: 180%;
     /* 25.2px */
 }
+
+.section-contact-list {
+    display: flex;
+    gap: 186px;
+    margin-top: 109px;
+}
+
+.section-contact-item {
+    width: 214px;
+}
+
+.name-contact {
+    margin-top: 19px;
+    margin-bottom: 32px;
+}
