@@ -35,10 +35,10 @@ document.querySelector('form').addEventListener('submit', e => {
     countryName.textContent === 'Country' ? dropDown.style = "outline: 2px solid red" :
         input.forEach(e => {
             e.value = '';
-        }) ? formTitle.textContent === "Join Us" : formTitle.textContent = "That's more like it";
+        }) ? formTitle.textContent === "Join us" : formTitle.textContent = "That's more like it!";
     countryName.textContent = 'Country';
 
     setTimeout(() => {
-        formTitle.textContent = "Join Us";
+        formTitle.textContent = "Join us";
     }, 5000);
 })
