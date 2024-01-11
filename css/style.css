@@ -105,6 +105,12 @@ button {
     color: white;
     text-decoration: none;
     font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #71A7E2;
+    transition: 0.2s;
 }
 
 section {
@@ -243,6 +249,16 @@ form {
     padding: 62px 30px;
     border-radius: 5px;
     border: 1px solid #E4E4E4;
+    cursor: pointer;
+}
+
+.section-service-item:hover {
+    background: #3172B9;
+
+    h3,
+    p {
+        color: #FFF;
+    }
 }
 
 .card-sub {
