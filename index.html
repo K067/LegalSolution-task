@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="/src/index.js" defer></script>
     <title>Lionic</title>
 </head>
 
@@ -229,13 +230,16 @@
                         <div class="form-group">
                             <div class="form-info-wrapper">
                                 <div class="form-info-group">
-                                    <input type="text" class="form-input form-input-alpha" placeholder="Name">
-                                    <input type="text" class="form-input form-input-alpha" placeholder="E-mail">
+                                    <input type="text" class="form-input" placeholder="Name">
+                                    <input type="text" class="form-input" placeholder="E-mail">
                                 </div>
                                 <div class="form-info-group">
-                                    <input type="text" class="form-input form-input-alpha" placeholder="Phone">
-                                    <div type="text" class="form-input form-input-drop">
-                                        <span class="country-select">Country</span>
+                                    <input type="text" class="form-input" placeholder="Phone">
+                                    <div class="form-input form-input-drop">
+                                        <div class="dropdown-group">
+                                            <span class="country-select">Country</span>
+                                            <img class="img-mod" src="./image/icon/arrow-up.svg" alt="wrap">
+                                        </div>
                                         <ul class="country-list">
                                             <li class="country-list-item">
                                                 <p class="country-name">
@@ -271,7 +275,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="text" class="form-input form-input-beta" placeholder="Comment">
+                            <textarea type="text" class="form-input form-input-beta" placeholder="Comment"></textarea>
                         </div>
                         <div class="submit-group">
                             <button class="form-btn">GET STARTED</button>
