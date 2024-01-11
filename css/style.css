@@ -126,6 +126,11 @@ form {
     align-items: flex-end;
 }
 
+.form-title {
+    transition: 2.5s;
+}
+
+
 ::placeholder,
 .country-select {
     color: #1C1C1C;
@@ -252,12 +257,18 @@ form {
     cursor: pointer;
 }
 
-.section-service-item:hover {
+.section-service-item:hover,
+.section-article-item:hover {
     background: #3172B9;
 
     h3,
+    span,
     p {
         color: #FFF;
+    }
+
+    path {
+        fill: #FFF;
     }
 }
 
@@ -282,6 +293,7 @@ form {
     gap: 30px;
     border-radius: 5px;
     border: 1px solid #E4E4E4;
+    cursor: pointer;
 }
 
 .card-content-advice {
@@ -453,7 +465,6 @@ form {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-grow: 1;
 }
 
 .form-input-drop {
@@ -506,4 +517,16 @@ form {
 .img-mod {
     transform: none;
     transition: 0.5s;
+}
+
+.sub-contact {
+    cursor: pointer;
+}
+
+.sub-contact:hover {
+    color: #71A7E2;
+}
+
+.form-input:focus {
+    outline: 1px solid #0E3B6C;
 }
