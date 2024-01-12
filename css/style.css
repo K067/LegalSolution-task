@@ -163,8 +163,8 @@ form {
 
 .container {
     max-width: 1170px;
-    margin-left: 185px;
-    margin-right: 185px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-nav {
@@ -619,4 +619,15 @@ form {
     margin-right: 56px;
     justify-content: space-between;
     flex-grow: 1;
+}
+
+
+@media(max-width:1440px) {}
+
+
+@media(max-width:1280px) {
+    .container {
+        margin-left: 46px;
+        margin-right: 46px;
+    }
 }
