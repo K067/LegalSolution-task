@@ -5,6 +5,16 @@ const imgMod = dropDown.querySelector('.img-mod');
 const list = dropList.querySelectorAll('.country-name');
 const countryName = document.querySelector('.country-select');
 const formTitle = document.querySelector('.form-title');
+const btn = document.querySelectorAll('.header-nav-item');
+
+const activeToggle = e => {
+    btn.forEach(e => {
+        e.classList.remove('actual-page');
+        e.firstElementChild.classList.remove('active');
+    });
+    e.target.classList.add('actual-page');
+    e.target.firstElementChild.classList.add('active');
+}
 
 const defaultValue = () => {
     dropList.classList.remove('active');
@@ -17,6 +27,10 @@ list.forEach(e => {
         countryName.textContent = e.target.textContent;
     })
 });
+
+btn.forEach(e => {
+    e.addEventListener('click', activeToggle)
+})
 
 dropDown.addEventListener('click', e => {
     const open = dropList.classList.toggle('active');
@@ -41,4 +55,5 @@ document.querySelector('form').addEventListener('submit', e => {
     setTimeout(() => {
         formTitle.textContent = "Join us";
     }, 5000);
-})
+});
+
