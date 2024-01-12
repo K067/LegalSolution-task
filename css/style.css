@@ -591,6 +591,7 @@ form {
 }
 
 .copyright {
+    cursor: context-menu;
     font-size: 12px;
     font-weight: 400;
 }
@@ -604,6 +605,11 @@ form {
         fill: #71A7E2;
     }
 
+}
+
+.mail-pth {
+    fill: none !important;
+    stroke: black;
 }
 
 .footer-mid-group {

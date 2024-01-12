@@ -6,6 +6,8 @@ const list = dropList.querySelectorAll('.country-name');
 const countryName = document.querySelector('.country-select');
 const formTitle = document.querySelector('.form-title');
 const btn = document.querySelectorAll('.header-nav-item');
+const mailIcn = document.querySelector('.mail-icn');
+const mailPth = mailIcn.querySelectorAll('.mail-pth');
 
 const activeToggle = e => {
     btn.forEach(e => {
@@ -55,4 +57,16 @@ document.querySelector('form').addEventListener('submit', e => {
     setTimeout(() => {
         formTitle.textContent = "Join us";
     }, 5000);
+});
+
+mailIcn.addEventListener('mouseover', () => {
+    mailPth.forEach(e => {
+        e.style.stroke = '#71A7E2';
+    })
+});
+
+mailIcn.addEventListener('mouseout', () => {
+    mailPth.forEach(e => {
+        e.style.stroke = 'black';
+    })
 });
