@@ -26,6 +26,15 @@ header {
     margin-top: 110px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    cursor: context-menu;
+}
+
 h1 {
     margin: 0;
 }
@@ -44,6 +53,19 @@ li {
     list-style-type: none;
     margin: 0;
     white-space: nowrap;
+}
+
+li,
+p,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h6,
+.path-fill {
+    transition: 0.5s;
 }
 
 a {
@@ -150,12 +172,15 @@ form {
     border-bottom: 1px solid #C4C4C4;
 }
 
-.header-nav-wrapper {
+.hf-wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav-wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
-    justify-content: space-between;
 }
 
 .header-nav-list {
@@ -164,14 +189,22 @@ form {
     gap: 52px;
 }
 
-.header-nav-item {
+
+.nav-item {
     text-decoration: none;
     display: flex;
-    color: #1C1C1C;
     font-size: 15px;
     font-weight: 600;
     line-height: normal;
     flex-direction: column;
+}
+
+.header-nav-item {
+    color: #1C1C1C;
+}
+
+.footer-nav-item {
+    color: #787878;
 }
 
 .page-line {
@@ -192,6 +225,7 @@ form {
 
 .header-nav-btn {
     padding: 15px 35.5px;
+    color: white !important;
 }
 
 .banner {
@@ -289,6 +323,8 @@ form {
         fill: #FFF;
     }
 }
+
+
 
 .card-sub {
     font-size: 14px;
@@ -547,4 +583,34 @@ form {
 
 .form-input:focus {
     outline: 1px solid #0E3B6C;
+}
+
+.footer-wrapper {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.copyright {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footer-sm {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    path:hover {
+        fill: #71A7E2;
+    }
+
+}
+
+.footer-mid-group {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 56px;
+    justify-content: space-between;
+    flex-grow: 1;
 }

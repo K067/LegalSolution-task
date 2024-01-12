@@ -56,4 +56,3 @@ document.querySelector('form').addEventListener('submit', e => {
         formTitle.textContent = "Join us";
     }, 5000);
 });
-
