@@ -324,8 +324,6 @@ form {
     }
 }
 
-
-
 .card-sub {
     font-size: 14px;
     font-weight: 400;
@@ -381,6 +379,7 @@ form {
 .section-client-list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
     margin-top: 42px;
 }
 
@@ -457,6 +456,7 @@ form {
 .form-group {
     display: flex;
     gap: 19px;
+    flex-wrap: wrap;
 }
 
 .form-input {
