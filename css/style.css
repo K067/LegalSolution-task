@@ -447,6 +447,7 @@ form {
 .section-contact-list {
     display: flex;
     gap: 186px;
+    flex-wrap: wrap;
     margin-top: 109px;
 }
 
@@ -734,8 +735,21 @@ form {
 
 
 @media(max-width:986px) {
+    section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     h3 {
         font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 3px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .path-alt {
+        width: 56px !important;
     }
 
     .container {
@@ -749,5 +763,84 @@ form {
 
     .sub-service {
         font-size: 12px;
+    }
+
+    .section-service-item {
+        width: 152px;
+        padding: 15px;
+    }
+
+    .banner-wrapper {
+        padding-top: 35px;
+        padding-bottom: 0px;
+    }
+
+    .section-sub {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .section-service-list {
+        gap: 16px;
+    }
+
+    .section-client-list {
+        gap: 15px;
+    }
+
+    .img-advice {
+        object-fit: cover;
+        width: 86px;
+        object-position: 50%;
+    }
+
+    .section-article-item {
+        width: 290px;
+        height: 191px;
+        gap: 15px;
+    }
+
+    .section-article-list,
+    .section-client-list,
+    .section-contact-list {
+        margin-top: 15px;
+    }
+
+    .card-title {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        text-align: left;
+    }
+
+    .card-content-advice {
+        width: 140px;
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
+
+    .section-article-list {
+        gap: 15px;
+    }
+
+    .section-contact-list {
+        gap: 30px;
+    }
+
+    .name-contact {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    form {
+        gap: 15px;
+    }
+
+    .submit-group {
+        gap: 15px;
+    }
+
+    .form-btn {
+        max-width: unset;
+        width: 288px;
     }
 }
