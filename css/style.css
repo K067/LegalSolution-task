@@ -55,6 +55,11 @@ li {
     white-space: nowrap;
 }
 
+p,
+span {
+    cursor: context-menu;
+}
+
 li,
 p,
 span,
@@ -144,6 +149,7 @@ section {
 }
 
 form {
+    z-index: -1;
     display: flex;
     gap: 19px;
     flex-direction: column;
@@ -189,6 +195,9 @@ form {
     gap: 52px;
 }
 
+.sub-client {
+    max-width: 281px;
+}
 
 .nav-item {
     text-decoration: none;
@@ -242,6 +251,7 @@ form {
 }
 
 .banner-title {
+    text-align: unset !important;
     width: 507px;
     font-weight: 300;
     font-size: 40px;
@@ -297,7 +307,7 @@ form {
 }
 
 .section-service-item {
-    width: 265px;
+    width: 270px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -336,10 +346,11 @@ form {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .section-article-item {
-    width: 561px;
+    width: 570px;
     height: 180px;
     display: flex;
     gap: 30px;
@@ -355,6 +366,7 @@ form {
 }
 
 .card-title {
+    font-size: 20px;
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -366,13 +378,11 @@ form {
 
 .sub-service {
     text-align: center;
-    width: 215px;
     word-break: break-all;
 }
 
 .sub-advice {
     text-align: left;
-    width: 190px;
 
 }
 
@@ -387,7 +397,7 @@ form {
     width: 370px;
     padding-top: 51px;
     padding-left: 36px;
-    padding-right: 53px;
+    padding-right: 37px;
     padding-bottom: 32px;
     border-radius: 5px;
     border: 1px solid #6b6b6b31;
@@ -410,10 +420,6 @@ form {
 .card-content-info {
     display: flex;
     flex-direction: column;
-}
-
-.sub-client {
-    width: 280px;
 }
 
 .sub-client,
@@ -621,13 +627,99 @@ form {
     flex-grow: 1;
 }
 
-
-@media(max-width:1440px) {}
-
-
 @media(max-width:1280px) {
+    h3 {
+        font-size: 17px;
+    }
+
+    .sub-service {
+        font-size: 13px;
+    }
+
     .container {
         margin-left: 46px;
         margin-right: 46px;
+    }
+
+    .section-service-item {
+        width: 213px;
+    }
+
+    .section-article-list {
+        justify-content: center;
+    }
+
+    .section-article-item {
+        width: 455px;
+    }
+
+    .section-client-item {
+        width: 296px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .path-fill {
+        width: 55px;
+    }
+
+    .break {
+        width: 99%;
+    }
+
+    .section-client-list {
+        justify-content: center;
+    }
+
+    .section-client-item {
+        padding: 20px;
+    }
+
+    .section-contact-list {
+        justify-content: center;
+    }
+
+    .sub-client {
+        max-width: 249px;
+    }
+
+    .form-group {
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:1168px) {
+    form {
+        align-items: center;
+    }
+
+    .form-input-beta {
+        min-height: 240px;
+    }
+
+    .copyright {
+        max-width: 110px;
+    }
+}
+
+@media(max-width:1056px) {
+    .section-service-item {
+        width: 206px;
+        padding: 42px 30px;
+    }
+
+    .section-article-item {
+        width: 442px;
+    }
+
+    .section-client-item {
+        width: 285px;
+    }
+
+    .section-contact-list {
+        gap: 126px;
     }
 }
