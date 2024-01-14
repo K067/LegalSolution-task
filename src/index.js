@@ -8,6 +8,7 @@ const formTitle = document.querySelector('.form-title');
 const btn = document.querySelectorAll('.header-nav-item');
 const mailIcn = document.querySelector('.mail-icn');
 const mailPth = mailIcn.querySelectorAll('.mail-pth');
+const field = document.querySelectorAll('input, textarea');
 
 const activeToggle = e => {
     btn.forEach(e => {
@@ -32,7 +33,11 @@ list.forEach(e => {
 
 btn.forEach(e => {
     e.addEventListener('click', activeToggle)
-})
+});
+
+field.forEach(e => {
+    e.addEventListener('click', () => defaultValue())
+});
 
 dropDown.addEventListener('click', e => {
     const open = dropList.classList.toggle('active');
