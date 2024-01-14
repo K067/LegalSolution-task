@@ -748,6 +748,20 @@ form {
         text-align: center;
     }
 
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-btn {
+        border-radius: 3px;
+        border: 1px solid #3172B9;
+    }
+
+    .header-nav-item {
+        display: flex;
+    }
+
+
     .path-alt {
         width: 56px !important;
     }
@@ -842,5 +856,66 @@ form {
     .form-btn {
         max-width: unset;
         width: 288px;
+    }
+}
+
+@media(max-width:917px) {
+    .container-mod {
+        margin-left: 230px !important;
+        margin-right: 230px !important;
+    }
+}
+
+@media(max-width:635px) {
+    .container-mod {
+        margin-left: 160px !important;
+        margin-right: 160px !important;
+    }
+
+    .form-input,
+    .form-input-beta {
+        width: 290px;
+    }
+
+    .form-info-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width:487px) {
+    .banner {
+        background-image: none;
+    }
+
+    .banner-title,
+    .banner-sub {
+        width: auto;
+    }
+
+    p,
+    span {
+        word-break: auto-phrase;
+    }
+
+    .container-mod {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .wrapper {
+        align-items: start;
+    }
+
+    .section-service-item {
+        width: 137px;
+    }
+
+    .section-contact-list {
+        justify-content: start;
     }
 }
