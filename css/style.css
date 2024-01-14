@@ -212,7 +212,8 @@ form {
     max-width: 281px;
 }
 
-.nav-item {
+.nav-item,
+.mobile-ni {
     text-decoration: none;
     display: flex;
     font-size: 15px;
@@ -221,7 +222,8 @@ form {
     flex-direction: column;
 }
 
-.header-nav-item {
+.header-nav-item,
+.mobile-ni {
     color: #1C1C1C;
 }
 
@@ -240,6 +242,7 @@ form {
     color: #3172B9;
 }
 
+.mobile-ni:hover,
 .header-nav-item:hover {
     color: #71A7E2;
     transition: 0.2s;
@@ -649,6 +652,35 @@ form {
     display: none;
 }
 
+.mobile-nav {
+    display: none;
+    border-top: 1px solid #C4C4C4;
+    overflow: hidden;
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+
+.close {
+    width: 20px;
+    display: none;
+}
+
+.mobile-ni {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.mobile-nav-list {
+    display: flex;
+    max-width: 100px;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
 @media(max-width:1280px) {
     h3 {
         font-size: 17px;
@@ -665,6 +697,10 @@ form {
 
     .section-service-item {
         width: 213px;
+    }
+
+    .section-contact-list {
+        gap: 126px;
     }
 
     .section-article-list {
@@ -721,6 +757,7 @@ form {
 }
 
 .mobile-btn {
+    justify-content: center;
     cursor: pointer;
     display: none;
     width: 40px;
@@ -736,8 +773,6 @@ form {
     .form-input-beta {
         min-height: 240px;
     }
-
-
 }
 
 @media(max-width:1056px) {
@@ -755,9 +790,7 @@ form {
         width: 285px;
     }
 
-    .section-contact-list {
-        gap: 126px;
-    }
+
 }
 
 @media(max-width:1023px) {
@@ -769,6 +802,11 @@ form {
 }
 
 @media(max-width:987px) {
+
+    .mobile-ni {
+        display: block !important;
+    }
+
     header {
         margin-top: 80px;
     }
@@ -804,16 +842,17 @@ form {
 
     .header-nav-item {
         display: none !important;
+
     }
 
     .bypass {
-        gap: 7px;
-        align-items: center;
         display: flex !important;
     }
 
     .header-nav-list {
         flex-wrap: wrap;
+        gap: 7px;
+        align-items: center;
     }
 
     .footer-wrapper {
@@ -1058,5 +1097,17 @@ form {
 
     .section-contact-list {
         justify-content: start;
+    }
+}
+
+@media(max-width:380px) {
+    .banner-secure {
+        margin-left: unset;
+        justify-content: center;
+    }
+
+    .banner-btn {
+        text-align: center;
+        width: 100%;
     }
 }
